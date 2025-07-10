@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="uz">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Avtobuslar | ООО «Prof Sale Auto Diesel»</title>
+  <link rel="icon" href="/Media/favicon logo.png" type="image/png" />
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-50 text-gray-900 font-sans">
+  <!-- Language Toggle -->
+  <div class="bg-blue-900 text-gray-100 text-sm flex justify-end items-center px-4 py-2">
+    <div class="flex items-center space-x-2">
+      <button class="px-3 py-1 rounded bg-blue-800 hover:bg-blue-700 focus:outline-none focus:ring-2 focus:ring-blue-400 font-semibold transition" onclick="setLang('uz')">UZ</button>
+      <button class="px-3 py-1 rounded bg-blue-800 hover:bg-blue-700 focus:outline-none focus:ring-2 focus:ring-blue-400 font-semibold transition" onclick="setLang('en')">EN</button>
+      <button class="px-3 py-1 rounded bg-blue-800 hover:bg-blue-700 focus:outline-none focus:ring-2 focus:ring-blue-400 font-semibold transition" onclick="setLang('ru')">RU</button>
+    </div>
+  </div>
+
+  <div class="max-w-7xl mx-auto py-12 px-4">
+    <h1 class="text-3xl font-extrabold text-blue-900 mb-8 text-center" data-lang="uz">Avtobus modellari</h1>
+    <h1 class="text-3xl font-extrabold text-blue-900 mb-8 text-center hidden" data-lang="ru">Модели автобусов</h1>
+    <h1 class="text-3xl font-extrabold text-blue-900 mb-8 text-center hidden" data-lang="en">Our Bus Models</h1>
+    
+    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+      <!-- City Bus -->
+      <div class="bg-white rounded-xl shadow-lg overflow-hidden hover:shadow-xl transition-shadow">
+        <img src="/Media/buses/1.jpg" alt="SAZ LE60" class="w-full h-48 object-cover" />
+        <div class="p-6">
+          <h3 class="text-xl font-bold text-red-900 mb-2" data-lang="uz">Avtobus SAZ LE60</h3>
+          <h3 class="text-xl font-bold text-red-900 mb-2 hidden" data-lang="en">SAZ LE60 Bus</h3>
+          <h3 class="text-xl font-bold text-red-900 mb-2 hidden" data-lang="ru">Автобус SAZ LE60</h3>
+          <p class="text-gray-600 mb-4" data-lang="uz">SAZ LE60 — past qavatli shahar avtobusi, M3 toifasi, I sinf. 56 nafargacha yo'lovchi sig'imi (25 o'rindiq + 31 turuvchi). 4HK1E5CC dvigateli, 190 ot kuchi, Allison 2100 avtomatik uzatma. 8,066 × 2,466 × 2,782 mm o'lchamlar, 10,200 kg vazn. "Tizza cho'kish" tizimi, harakatlanish imkoniyati cheklangan odamlar uchun rampa, Evro-5 standarti.</p>
+          <p class="text-gray-600 mb-4 hidden" data-lang="en">SAZ LE60 — low-floor city bus, M3 category, Class I. Passenger capacity up to 56 (25 seats + 31 standing). 4HK1E5CC engine, 190 hp, Allison 2100 automatic transmission. Dimensions 8,066 × 2,466 × 2,782 mm, weight 10,200 kg. "Kneeling" system, ramp for disabled access, Euro-5 standard.</p>
+          <p class="text-gray-600 mb-4 hidden" data-lang="ru">SAZ LE60 — низкопольный городской автобус, категория M3, класс I. Вместимость до 56 пассажиров (25 сидений + 31 стоячий). Двигатель 4HK1E5CC, 190 л.с., автоматическая коробка передач Allison 2100. Габариты 8,066 × 2,466 × 2,782 мм, вес 10,200 кг. Система «приседания на колени», пандус для инвалидов, стандарт Евро-5.</p>
+          <button class="w-full mt-4 px-4 py-2 bg-red-700 text-white rounded-lg font-semibold hover:bg-red-800 transition" data-lang="uz" onclick="window.location.href='le60.html'">Batafsil</button>
+          <button class="w-full mt-4 px-4 py-2 bg-red-700 text-white rounded-lg font-semibold hover:bg-red-800 transition hidden" data-lang="ru" onclick="window.location.href='le60.html'">Подробнее</button>
+          <button class="w-full mt-4 px-4 py-2 bg-red-700 text-white rounded-lg font-semibold hover:bg-red-800 transition hidden" data-lang="en" onclick="window.location.href='le60.html'">Learn More</button>
+        </div>
+      </div>
+
+      <!-- Intercity Bus -->
+      <div class="bg-white rounded-xl shadow-lg overflow-hidden hover:shadow-xl transition-shadow">
+        <img src="/Media/buses/2.jpg" alt="SAZ HC45 (CNG)" class="w-full h-48 object-cover" />
+        <div class="p-6">
+          <h3 class="text-xl font-bold text-red-900 mb-2" data-lang="uz">Avtobus SAZ HC45 (CNG)</h3>
+          <h3 class="text-xl font-bold text-red-900 mb-2 hidden" data-lang="en">SAZ HC45 (CNG) Bus</h3>
+          <h3 class="text-xl font-bold text-red-900 mb-2 hidden" data-lang="ru">Автобус SAZ HC45 (CNG)</h3>
+          <p class="text-gray-600 mb-4" data-lang="uz">SAZ HC45 — shahar avtobusi, M3 toifasi, I sinf. 39 nafargacha yo'lovchi sig'imi (18 o'rindiq + 21 turuvchi). 4HV1 dvigateli, 131 ot kuchi, 6 pog'onali mexanik uzatma. 7,035 × 2,230 × 2,830 mm o'lchamlar, 7,500 kg vazn. CNG yonilg'i tizimi (2 × 150 L), 25 ± 2 L/100 km yoqilg'i sarfi.</p>
+          <p class="text-gray-600 mb-4 hidden" data-lang="en">SAZ HC45 — urban bus, M3 category, Class I. Passenger capacity up to 39 (18 seats + 21 standing). 4HV1 engine, 131 hp, 6-speed manual transmission. Dimensions 7,035 × 2,230 × 2,830 mm, weight 7,500 kg. CNG fuel system (2 × 150 L), fuel consumption 25 ± 2 L/100 km.</p>
+          <p class="text-gray-600 mb-4 hidden" data-lang="ru">SAZ HC45 — городской автобус, категория M3, класс I. Вместимость до 39 пассажиров (18 сидений + 21 стоячий). Двигатель 4HV1, 131 л.с., 6-ступенчатая механическая коробка передач. Габариты 7,035 × 2,230 × 2,830 мм, вес 7,500 кг. Топливная система CNG (2 × 150 л), расход топлива 25 ± 2 л/100 км.</p>
+          <button class="w-full mt-4 px-4 py-2 bg-red-700 text-white rounded-lg font-semibold hover:bg-red-800 transition" data-lang="uz" onclick="window.location.href='hc45.html'">Batafsil</button>
+          <button class="w-full mt-4 px-4 py-2 bg-red-700 text-white rounded-lg font-semibold hover:bg-red-800 transition hidden" data-lang="ru" onclick="window.location.href='hc45.html'">Подробнее</button>
+          <button class="w-full mt-4 px-4 py-2 bg-red-700 text-white rounded-lg font-semibold hover:bg-red-800 transition hidden" data-lang="en" onclick="window.location.href='hc45.html'">Learn More</button>
+        </div>
+      </div>
+
+      <!-- Mini Bus -->
+      <div class="bg-white rounded-xl shadow-lg overflow-hidden hover:shadow-xl transition-shadow">
+        <img src="/Media/buses/3.jpg" alt="SAZ HD50" class="w-full h-48 object-cover" />
+        <div class="p-6">
+          <h3 class="text-xl font-bold text-red-900 mb-2" data-lang="uz">Avtobus SAZ HD50</h3>
+          <h3 class="text-xl font-bold text-red-900 mb-2 hidden" data-lang="en">SAZ HD50 Bus</h3>
+          <h3 class="text-xl font-bold text-red-900 mb-2 hidden" data-lang="ru">Автобус SAZ HD50</h3>
+          <p class="text-gray-600 mb-4" data-lang="uz">SAZ HD50 — shaharlararo avtobus, M3 toifasi, II va III sinf. 44 nafargacha yo'lovchi sig'imi (II sinf) yoki 29 nafargacha (III sinf). 4HK1-TCN dvigateli, 150 ot kuchi, 6 pog'onali mexanik uzatma. 8,010 × 2,320 × 2,820 mm o'lchamlar, 9,500 kg vazn. Konditsioner, monitor, video nazorat, salon isitgichi va boshqa qulayliklar bilan jihozlangan.</p>
+          <p class="text-gray-600 mb-4 hidden" data-lang="en">SAZ HD50 — intercity bus, M3 category, Class II and III. Passenger capacity up to 44 (Class II) or 29 (Class III). 4HK1-TCN engine, 150 hp, 6-speed manual transmission. Dimensions 8,010 × 2,320 × 2,820 mm, weight 9,500 kg. Equipped with air conditioner, monitor, video surveillance, salon heater and other comfort features.</p>
+          <p class="text-gray-600 mb-4 hidden" data-lang="ru">SAZ HD50 — междугородний автобус, категория M3, класс II и III. Вместимость до 44 пассажиров (класс II) или 29 (класс III). Двигатель 4HK1-TCN, 150 л.с., 6-ступенчатая механическая коробка передач. Габариты 8,010 × 2,320 × 2,820 мм, вес 9,500 кг. Оснащён кондиционером, монитором, видеонаблюдением, салонным отопителем и другими удобствами.</p>
+          <button class="w-full mt-4 px-4 py-2 bg-red-700 text-white rounded-lg font-semibold hover:bg-red-800 transition" data-lang="uz" onclick="window.location.href='hd50.html'">Batafsil</button>
+          <button class="w-full mt-4 px-4 py-2 bg-red-700 text-white rounded-lg font-semibold hover:bg-red-800 transition hidden" data-lang="ru" onclick="window.location.href='hd50.html'">Подробнее</button>
+          <button class="w-full mt-4 px-4 py-2 bg-red-700 text-white rounded-lg font-semibold hover:bg-red-800 transition hidden" data-lang="en" onclick="window.location.href='hd50.html'">Learn More</button>
+        </div>
+      </div>
+    </div>
+
+    <div class="text-center mt-8">
+      <a href="index.html" class="text-blue-700 hover:underline font-semibold" data-lang="uz">← Bosh sahifaga qaytish</a>
+      <a href="index.html" class="text-blue-700 hover:underline font-semibold hidden" data-lang="ru">← Вернуться на главную</a>
+      <a href="index.html" class="text-blue-700 hover:underline font-semibold hidden" data-lang="en">← Back to Main Page</a>
+    </div>
+  </div>
+
+  <!-- Language Toggle JS -->
+  <script>
+    function setLang(lang) {
+      document.querySelectorAll('[data-lang]').forEach(el => {
+        if (el.getAttribute('data-lang') === lang) {
+          el.classList.remove('hidden');
+        } else {
+          el.classList.add('hidden');
+        }
+      });
+    }
+    // Default to UZ
+    setLang('uz');
+  </script>
+</body>
+</html> 

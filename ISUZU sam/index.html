@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html lang="uz">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ООО «Prof Sale Auto Diesel»</title>
+  <link rel="icon" href="/Media/favicon logo.png" type="image/png" />
+  <meta name="description" content="Avtobuslar, yuk mashinalari va maxsus texnika butun O'zbekiston bo'ylab. SamAuto korporativ sayti." />
+  <!-- Tailwind CSS CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-50 text-gray-900 font-sans">
+  <!-- Top Bar: Contact & Socials -->
+  <div class="bg-red-900 text-gray-100 text-sm flex justify-between items-center px-4 py-2">
+    <div class="flex items-center space-x-4">
+      <span class="flex items-center"><svg class="w-4 h-4 mr-1" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M3 5h2l3.6 7.59-1.35 2.44A1 1 0 0 0 8 17h12a1 1 0 0 0 1-1V6a1 1 0 0 0-1-1H6.21"></path></svg>+998 97 406 05 14 | +998 97 923 00 21</span>
+      <span class="flex items-center"><svg class="w-4 h-4 mr-1" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M16 8a6 6 0 1 1-12 0 6 6 0 0 1 12 0z"></path><path d="M2 20h20"></path></svg><a href="https://www.instagram.com/isuzu_profsaleautodiesel.uz?utm_source=qr&igsh=eGJ0cWEyYWl3cGs5" target="_blank" rel="noopener" class="hover:underline">Instagram</a></span>
+      <span class="flex items-center"><svg class="w-4 h-4 mr-1" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M21 4L8.5 20l-5.5-6"/></svg><a href="https://t.me/isuzuprofsaleautodiesel" target="_blank" rel="noopener" class="hover:underline">Telegram</a></span>
+    </div>
+    <div class="flex items-center space-x-2">
+      <button class="px-3 py-1 rounded bg-red-800 hover:bg-red-700 focus:outline-none focus:ring-2 focus:ring-red-400 font-semibold transition" onclick="setLang('uz')">UZ</button>
+      <button class="px-3 py-1 rounded bg-red-800 hover:bg-red-700 focus:outline-none focus:ring-2 focus:ring-red-400 font-semibold transition" onclick="setLang('en')">EN</button>
+      <button class="px-3 py-1 rounded bg-red-800 hover:bg-red-700 focus:outline-none focus:ring-2 focus:ring-red-400 font-semibold transition" onclick="setLang('ru')">RU</button>
+    </div>
+  </div> 
+
+  <!-- Header -->
+  <header class="w-full border-b bg-white shadow sticky top-0 z-20">
+    <div class="max-w-7xl mx-auto flex items-center justify-between p-4">
+      <div class="flex items-center space-x-4">
+        <img src="/Media/ISUZU logo.png" alt="SamAuto Logo" class="w-12 h-12 rounded-full bg-white shadow border p-1" />
+        <span class="font-extrabold text-2xl tracking-tight text-red-900" data-lang="uz">SamAuto</span>
+        <span class="font-extrabold text-2xl tracking-tight text-red-900 hidden" data-lang="ru">СамАвто</span>
+        <span class="font-extrabold text-2xl tracking-tight text-red-900 hidden" data-lang="en">SamAuto</span>
+      </div>                                                                                                                                    
+      <nav class="hidden md:flex space-x-6 font-semibold text-gray-700">
+        <a href="#products" class="hover:text-red-700 transition" data-lang="uz">Mahsulotlar</a>
+        <a href="#products" class="hover:text-red-700 transition hidden" data-lang="ru">Продукция</a>
+        <a href="#products" class="hover:text-red-700 transition hidden" data-lang="en">Products</a>
+        <a href="#service" class="hover:text-red-700 transition" data-lang="uz">Xizmat</a>
+        <a href="#service" class="hover:text-red-700 transition hidden" data-lang="ru">Сервис</a>
+        <a href="#service" class="hover:text-red-700 transition hidden" data-lang="en">Service</a>
+        <a href="about.html" class="hover:text-red-700 transition" data-lang="uz">Kompaniya</a>
+        <a href="about.html" class="hover:text-red-700 transition hidden" data-lang="ru">О компании</a>
+        <a href="about.html" class="hover:text-red-700 transition hidden" data-lang="en">About</a>
+        <a href="#news" class="hover:text-red-700 transition" data-lang="uz">Yangiliklar</a>
+        <a href="#news" class="hover:text-red-700 transition hidden" data-lang="ru">Новости</a>
+        <a href="#news" class="hover:text-red-700 transition hidden" data-lang="en">News</a>
+        <a href="#contacts" class="hover:text-red-700 transition" data-lang="uz">Kontaktlar</a>
+        <a href="#contacts" class="hover:text-red-700 transition hidden" data-lang="ru">Контакты</a>
+        <a href="#contacts" class="hover:text-red-700 transition hidden" data-lang="en">Contacts</a>
+      </nav>
+      <div class="md:hidden">
+        <button class="p-2 rounded hover:bg-red-100 focus:outline-none focus:ring-2 focus:ring-red-400">☰</button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Hero Section -->
+  <section id="hero" class="w-full min-h-[60vh] flex items-center justify-center bg-gradient-to-r from-red-900 to-red-400 relative overflow-hidden">
+    <img src="/Media/c836cf14-f4a0-497a-9590-a009a264797c_5(3).jpg" alt="SamAuto Hero Banner" class="absolute inset-0 w-full h-full object-cover opacity-40" />
+    <div class="relative z-10 text-center text-white max-w-2xl mx-auto p-6 rounded-xl bg-red-900/60 shadow-lg">
+      <h1 class="text-3xl md:text-5xl font-extrabold mb-4 drop-shadow-lg" data-lang="uz">Avtobuslar, yuk mashinalari va maxsus texnika butun O'zbekiston bo'ylab</h1>
+      <h1 class="text-3xl md:text-5xl font-extrabold mb-4 drop-shadow-lg hidden" data-lang="ru">Автобусы, грузовики и спецтехника по всему Узбекистану</h1>
+      <h1 class="text-3xl md:text-5xl font-extrabold mb-4 drop-shadow-lg hidden" data-lang="en">Buses, trucks & special equipment throughout Uzbekistan</h1>
+      <div class="flex flex-col sm:flex-row justify-center gap-4 mt-6">
+        <a href="#products" class="px-8 py-3 bg-red-700 rounded-lg text-white font-bold text-lg shadow hover:bg-red-800 transition" data-lang="uz">Mahsulotlarni ko'rish</a>
+        <a href="#products" class="px-8 py-3 bg-red-700 rounded-lg text-white font-bold text-lg shadow hover:bg-red-800 transition hidden" data-lang="ru">Посмотреть продукцию</a>
+        <a href="#products" class="px-8 py-3 bg-red-700 rounded-lg text-white font-bold text-lg shadow hover:bg-red-800 transition hidden" data-lang="en">View Products</a>
+        <a href="#contacts" class="px-8 py-3 bg-white text-red-700 rounded-lg font-bold text-lg shadow hover:bg-gray-100 transition border border-red-700" data-lang="uz">Bog'lanish</a>
+        <a href="#contacts" class="px-8 py-3 bg-white text-red-700 rounded-lg font-bold text-lg shadow hover:bg-gray-100 transition border border-red-700 hidden" data-lang="ru">Связаться с нами</a>
+        <a href="#contacts" class="px-8 py-3 bg-white text-red-700 rounded-lg font-bold text-lg shadow hover:bg-gray-100 transition border border-red-700 hidden" data-lang="en">Contact Us</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Main Content -->
+  <main class="max-w-7xl mx-auto p-4">
+    <!-- Products Overview -->
+    <section id="products" class="my-16">
+      <h2 class="text-3xl font-extrabold mb-10 text-center text-red-900" data-lang="uz">Mahsulotlarimiz</h2>
+      <h2 class="text-3xl font-extrabold mb-10 text-center text-red-900 hidden" data-lang="ru">Наша продукция</h2>
+      <h2 class="text-3xl font-extrabold mb-10 text-center text-red-900 hidden" data-lang="en">Our Products</h2>
+      <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8">
+        <!-- Buses -->
+        <div class="bg-white rounded-xl shadow-lg p-6 flex flex-col items-center transition-transform hover:-translate-y-1 hover:shadow-2xl">
+          <img src="/Media/1.webp" alt="Avtobuslar" class="w-full h-36 object-contain bg-white rounded-lg mb-3 border border-gray-100 shadow-sm" />
+          <span class="font-bold text-lg mb-1" data-lang="uz">Avtobuslar</span>
+          <span class="font-bold text-lg mb-1 hidden" data-lang="ru">Автобусы</span>
+          <span class="font-bold text-lg mb-1 hidden" data-lang="en">Buses</span>
+          <p class="text-gray-600 text-sm mb-3 text-center" data-lang="uz">Zamonaviy shahar va shaharlararo avtobuslar, keng salon, ISUZU shassisi va tejamkor dvigatellar.</p>
+          <p class="text-gray-600 text-sm mb-3 text-center hidden" data-lang="ru">Современные городские и междугородние автобусы, просторный салон, шасси ISUZU и экономичные двигатели.</p>
+          <p class="text-gray-600 text-sm mb-3 text-center hidden" data-lang="en">Modern city and intercity buses, spacious interiors, ISUZU chassis, and fuel-efficient engines.</p>
+          <a href="buses.html" class="mt-auto px-4 py-2 bg-red-700 text-white rounded-lg font-semibold hover:bg-red-800 transition" data-lang="uz">Model qatorini ko'rish</a>
+          <a href="buses.html" class="mt-auto px-4 py-2 bg-red-700 text-white rounded-lg font-semibold hover:bg-red-800 transition hidden" data-lang="ru">Посмотреть модели</a>
+          <a href="buses.html" class="mt-auto px-4 py-2 bg-red-700 text-white rounded-lg font-semibold hover:bg-red-800 transition hidden" data-lang="en">View lineup</a>
+        </div>
+        <!-- Trucks -->
+        <div class="bg-white rounded-xl shadow-lg p-6 flex flex-col items-center transition-transform hover:-translate-y-1 hover:shadow-2xl">
+          <img src="/Media/2.webp" alt="Yuk mashinalari" class="w-full h-36 object-contain bg-white rounded-lg mb-3 border border-gray-100 shadow-sm" />
+          <span class="font-bold text-lg mb-1" data-lang="uz">Yuk mashinalari</span>
+          <span class="font-bold text-lg mb-1 hidden" data-lang="ru">Грузовики</span>
+          <span class="font-bold text-lg mb-1 hidden" data-lang="en">Trucks</span>
+          <p class="text-gray-600 text-sm mb-3 text-center" data-lang="uz">Yuk va qurilish uchun mo'ljallangan, katta yuk ko'tarish quvvati va mustahkam osma.</p>
+          <p class="text-gray-600 text-sm mb-3 text-center hidden" data-lang="ru">Грузовые и строительные автомобили с большой грузоподъемностью и прочной подвеской.</p>
+          <p class="text-gray-600 text-sm mb-3 text-center hidden" data-lang="en">Heavy-duty flatbed and cargo trucks for logistics and construction, high durability, large payload, excellent suspension.</p>
+          <a href="trucks.html" class="mt-auto px-4 py-2 bg-red-700 text-white rounded-lg font-semibold hover:bg-red-800 transition" data-lang="uz">Model qatorini ko'rish</a>
+          <a href="trucks.html" class="mt-auto px-4 py-2 bg-red-700 text-white rounded-lg font-semibold hover:bg-red-800 transition hidden" data-lang="ru">Посмотреть модели</a>
+          <a href="trucks.html" class="mt-auto px-4 py-2 bg-red-700 text-white rounded-lg font-semibold hover:bg-red-800 transition hidden" data-lang="en">View lineup</a>
+        </div>
+        <!-- Special Equipment -->
+        <div class="bg-white rounded-xl shadow-lg p-6 flex flex-col items-center transition-transform hover:-translate-y-1 hover:shadow-2xl">
+          <img src="/Media/6.webp" alt="Maxsus texnika" class="w-full h-36 object-contain bg-white rounded-lg mb-3 border border-gray-100 shadow-sm" />
+          <span class="font-bold text-lg mb-1" data-lang="uz">Maxsus texnika</span>
+          <span class="font-bold text-lg mb-1 hidden" data-lang="ru">Спецтехника</span>
+          <span class="font-bold text-lg mb-1 hidden" data-lang="en">Special Equipment</span>
+          <p class="text-gray-600 text-sm mb-3 text-center" data-lang="uz">Sanoat, kommunal va favqulodda xizmatlar uchun maxsus avtomobillar.</p>
+          <p class="text-gray-600 text-sm mb-3 text-center hidden" data-lang="ru">Спецавтомобили для промышленности, коммунальных и экстренных служб.</p>
+          <p class="text-gray-600 text-sm mb-3 text-center hidden" data-lang="en">Custom utility vehicles for industry, utilities, and emergency services.</p>
+          <a href="special-equipment.html" class="mt-auto px-4 py-2 bg-red-700 text-white rounded-lg font-semibold hover:bg-red-800 transition" data-lang="uz">Model qatorini ko'rish</a>
+          <a href="special-equipment.html" class="mt-auto px-4 py-2 bg-red-700 text-white rounded-lg font-semibold hover:bg-red-800 transition hidden" data-lang="ru">Посмотреть модели</a>
+          <a href="special-equipment.html" class="mt-auto px-4 py-2 bg-red-700 text-white rounded-lg font-semibold hover:bg-red-800 transition hidden" data-lang="en">View lineup</a>
+        </div>
+        <!-- Pickups -->
+        <div class="bg-white rounded-xl shadow-lg p-6 flex flex-col items-center transition-transform hover:-translate-y-1 hover:shadow-2xl">
+          <img src="/Media/3.png" alt="Pikaplar" class="w-full h-36 object-contain bg-white rounded-lg mb-3 border border-gray-100 shadow-sm" />
+          <span class="font-bold text-lg mb-1" data-lang="uz">Pikaplar</span>
+          <span class="font-bold text-lg mb-1 hidden" data-lang="ru">Пикапы</span>
+          <span class="font-bold text-lg mb-1 hidden" data-lang="en">Pickups</span>
+          <p class="text-gray-600 text-sm mb-3 text-center" data-lang="uz">ISUZU platformasida, baland yurish va ikki kabinali, yengil tijorat uchun.</p>
+          <p class="text-gray-600 text-sm mb-3 text-center hidden" data-lang="ru">Пикапы на платформе ISUZU, высокий клиренс, двойная кабина, для легкого коммерческого использования.</p>
+          <p class="text-gray-600 text-sm mb-3 text-center hidden" data-lang="en">Robust pickups on ISUZU platform, high ground clearance, dual cabins, for light commercial use.</p>
+          <a href="pickups.html" class="mt-auto px-4 py-2 bg-red-700 text-white rounded-lg font-semibold hover:bg-red-800 transition" data-lang="uz">Model qatorini ko'rish</a>
+          <a href="pickups.html" class="mt-auto px-4 py-2 bg-red-700 text-white rounded-lg font-semibold hover:bg-red-800 transition hidden" data-lang="ru">Посмотреть модели</a>
+          <a href="pickups.html" class="mt-auto px-4 py-2 bg-red-700 text-white rounded-lg font-semibold hover:bg-red-800 transition hidden" data-lang="en">View lineup</a>
+        </div>
+        <!-- Service Vehicles -->
+        <div class="bg-white rounded-xl shadow-lg p-6 flex flex-col items-center transition-transform hover:-translate-y-1 hover:shadow-2xl">
+          <img src="/Media/5.jpg" alt="Xizmat ko'rsatish avtomobillari" class="w-full h-36 object-contain bg-white rounded-lg mb-3 border border-gray-100 shadow-sm" />
+          <span class="font-bold text-lg mb-1" data-lang="uz">Xizmat ko'rsatish avtomobillari</span>
+          <span class="font-bold text-lg mb-1 hidden" data-lang="ru">Сервисные автомобили</span>
+          <span class="font-bold text-lg mb-1 hidden" data-lang="en">Service Vehicles</span>
+          <p class="text-gray-600 text-sm mb-3 text-center" data-lang="uz">Texnik xizmat ko'rsatish uchun mobil ustaxona va ehtiyot qismlar bilan jihozlangan avtomobillar.</p>
+          <p class="text-gray-600 text-sm mb-3 text-center hidden" data-lang="ru">Мобильные сервисные автомобили, оснащенные инструментами и запчастями для обслуживания на выезде.</p>
+          <p class="text-gray-600 text-sm mb-3 text-center hidden" data-lang="en">Mobile service trucks equipped for field maintenance with tools and spare parts.</p>
+          <a href="service-vehicles.html" class="mt-auto px-4 py-2 bg-red-700 text-white rounded-lg font-semibold hover:bg-red-800 transition" data-lang="uz">Model qatorini ko'rish</a>
+          <a href="service-vehicles.html" class="mt-auto px-4 py-2 bg-red-700 text-white rounded-lg font-semibold hover:bg-red-800 transition hidden" data-lang="ru">Посмотреть модели</a>
+          <a href="service-vehicles.html" class="mt-auto px-4 py-2 bg-red-700 text-white rounded-lg font-semibold hover:bg-red-800 transition hidden" data-lang="en">View lineup</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Special Offers (Tabbed) -->
+    <!-- Removed Offers Section -->
+
+    <!-- Dealer Network -->
+    <!-- Removed Dealers Section -->
+
+    <!-- Service Section -->
+    <section id="service" class="my-12">
+      <h2 class="text-2xl font-bold mb-6" data-lang="en">Service</h2>
+      <h2 class="text-2xl font-bold mb-6 hidden" data-lang="uz">Xizmat</h2>
+      <h2 class="text-2xl font-bold mb-6 hidden" data-lang="ru">Сервис</h2>
+      <p class="mb-4" data-lang="en">Our service center is conveniently located. See the map and photos below.</p>
+      <p class="mb-4 hidden" data-lang="uz">Bizning xizmat markazimiz qulay joylashgan. Xarita va suratlarni quyida ko'ring.</p>
+      <p class="mb-4 hidden" data-lang="ru">Наш сервисный центр удобно расположен. Смотрите карту и фотографии ниже.</p>
+      <div class="flex justify-center mb-8">
+        <script type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3A49e6a7c871f22939e56d4ee0415074f57c3dc0ee8e02b28bc2032e3393c6c163&amp;width=500&amp;height=400&amp;lang=ru_RU&amp;scroll=true"></script>
+      </div>
+      <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-4 max-w-4xl mx-auto">
+        <a href="/Service content/1.jpg" target="_blank" rel="noopener"><img src="/Service content/1.jpg" alt="Service Location 1" class="rounded shadow object-cover w-full h-48" /></a>
+        <a href="/Service content/2.jpg" target="_blank" rel="noopener"><img src="/Service content/2.jpg" alt="Service Location 2" class="rounded shadow object-cover w-full h-48" /></a>
+        <a href="/Service content/3.jpg" target="_blank" rel="noopener"><img src="/Service content/3.jpg" alt="Service Location 3" class="rounded shadow object-cover w-full h-48" /></a>
+        <a href="/Service content/4.jpg" target="_blank" rel="noopener"><img src="/Service content/4.jpg" alt="Service Location 4" class="rounded shadow object-cover w-full h-48" /></a>
+      </div>
+    </section>
+
+    <!-- Careers Section -->
+    <!-- Removed Careers Section -->
+
+    <!-- News Section -->
+    <section id="news" class="my-12">
+      <h2 class="text-2xl font-bold mb-6" data-lang="en">Latest News</h2>
+      <h2 class="text-2xl font-bold mb-6 hidden" data-lang="uz">So'nggi yangiliklar</h2>
+      <h2 class="text-2xl font-bold mb-6 hidden" data-lang="ru">Последние новости</h2>
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+        <div class="bg-white rounded shadow p-4">
+          <div class="text-xs text-gray-500 mb-1">2024-06-01</div>
+          <div class="font-semibold mb-1" data-lang="en">New ISUZU Buses Launched</div>
+          <div class="font-semibold mb-1 hidden" data-lang="uz">Yangi ISUZU avtobuslari taqdimoti</div>
+          <div class="font-semibold mb-1 hidden" data-lang="ru">Запуск новых автобусов ISUZU</div>
+          <p class="text-sm mb-2" data-lang="en">SamAuto introduces the latest ISUZU buses for urban and intercity routes.</p>
+          <p class="text-sm mb-2 hidden" data-lang="uz">SamAuto shahar va shaharlararo yo'nalishlar uchun yangi ISUZU avtobuslarini taqdim etdi.</p>
+          <p class="text-sm mb-2 hidden" data-lang="ru">SamAuto представляет новые автобусы ISUZU для городских и междугородних маршрутов.</p>
+          <a href="#" class="text-red-600 text-sm" data-lang="en">Read more</a>
+          <a href="#" class="text-red-600 text-sm hidden" data-lang="uz">Batafsil</a>
+          <a href="#" class="text-red-600 text-sm hidden" data-lang="ru">Подробнее</a>
+        </div>
+        <div class="bg-white rounded shadow p-4">
+          <div class="text-xs text-gray-500 mb-1">2024-06-10</div>
+          <div class="font-semibold mb-1" data-lang="uz">"ISUZU Auto" modulli krediti</div>
+          <div class="font-semibold mb-1 hidden" data-lang="ru">Модульный кредит "ISUZU Auto"</div>
+          <div class="font-semibold mb-1 hidden" data-lang="en">"ISUZU Auto" Modular Credit Program</div>
+          <p class="text-sm mb-2" data-lang="uz">3 mlrd so'mgacha kredit, ISUZU avtomobillarini xarid qilish uchun maxsus shartlar, boshlang'ich to'lov 25% dan, 36-60 oy muddat, foiz stavkalari va batafsil ma'lumotlar yangilikda.</p>
+          <p class="text-sm mb-2 hidden" data-lang="ru">Кредит до 3 млрд сум, специальные условия для покупки автомобилей ISUZU, первоначальный взнос от 25%, срок 36-60 месяцев, процентные ставки и подробности в новости.</p>
+          <p class="text-sm mb-2 hidden" data-lang="en">Up to 3 billion UZS credit, special terms for purchasing ISUZU vehicles, down payment from 25%, 36-60 months, interest rates and details in the news.</p>
+          <a href="#" class="text-red-600 text-sm" data-lang="uz">Batafsil</a>
+          <a href="#" class="text-red-600 text-sm hidden" data-lang="ru">Подробнее</a>
+          <a href="#" class="text-red-600 text-sm hidden" data-lang="en">Read more</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Download Catalog Button -->
+    <div class="flex justify-center my-8">
+      <a href="/assets/catalog.pdf" download class="px-6 py-2 bg-red-700 text-white rounded font-semibold hover:bg-red-800" data-lang="en">Download Catalog</a>
+      <a href="/assets/catalog.pdf" download class="px-6 py-2 bg-red-700 text-white rounded font-semibold hover:bg-red-800 hidden" data-lang="uz">Katalogni yuklab olish</a>
+      <a href="/assets/catalog.pdf" download class="px-6 py-2 bg-red-700 text-white rounded font-semibold hover:bg-red-800 hidden" data-lang="ru">Скачать каталог</a>
+    </div>
+
+    <!-- Contact Page Section -->
+    <section id="contacts" class="my-12">
+      <h2 class="text-2xl font-bold mb-6" data-lang="en">Contact Us</h2>
+      <h2 class="text-2xl font-bold mb-6 hidden" data-lang="uz">Bog'lanish</h2>
+      <h2 class="text-2xl font-bold mb-6 hidden" data-lang="ru">Связаться с нами</h2>
+      <div class="flex flex-col items-center justify-center bg-white rounded-xl shadow-lg p-8 max-w-xl mx-auto">
+        <div class="mb-4 flex items-center text-lg font-semibold text-red-900"><svg class="w-5 h-5 mr-2" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M3 5h2l3.6 7.59-1.35 2.44A1 1 0 0 0 8 17h12a1 1 0 0 0 1-1V6a1 1 0 0 0-1-1H6.21"></path></svg>+998 97 406 05 14 | +998 97 923 00 21</div>
+        <div class="mb-4 flex items-center text-lg font-semibold text-red-900"><svg class="w-5 h-5 mr-2" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M17.657 16.657L13.414 12.414a8 8 0 1 0-1.414 1.414l4.243 4.243a1 1 0 0 0 1.414-1.414z"></path></svg>ООО «Prof Sale Auto Diesel», Samarqand, Uzbekistan</div>
+        <div class="flex space-x-4 mt-2">
+          <a href="tel:+998712000000" class="px-4 py-2 bg-red-700 text-white rounded-lg font-semibold hover:bg-red-800 transition flex items-center"><svg class="w-4 h-4 mr-1" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M3 5h2l3.6 7.59-1.35 2.44A1 1 0 0 0 8 17h12a1 1 0 0 0 1-1V6a1 1 0 0 0-1-1H6.21"></path></svg><span data-lang="uz">Qo'ng'iroq qilish</span><span class="hidden" data-lang="ru">Позвонить</span><span class="hidden" data-lang="en">Call</span></a>
+        </div>
+        <div class="w-full flex justify-center mt-6">
+          <iframe src="https://yandex.com/map-widget/v1/?um=constructor%3A1c21736f6a7b24d0bb323aefc7c735443ecc2e88ec0cd876c720870640587340&amp;source=constructor" width="500" height="400" frameborder="0"></iframe>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer class="w-full border-t bg-white mt-8 p-4 text-center text-sm text-gray-500">
+    <nav class="flex flex-wrap justify-center space-x-4 mb-2">
+      <a href="#products" class="hover:text-red-600" data-lang="en">Products</a>
+      <a href="#products" class="hover:text-red-600 hidden" data-lang="uz">Mahsulotlar</a>
+      <a href="#products" class="hover:text-red-600 hidden" data-lang="ru">Продукция</a>
+      <a href="#service" class="hover:text-red-600" data-lang="en">Service</a>
+      <a href="#service" class="hover:text-red-600 hidden" data-lang="uz">Xizmat</a>
+      <a href="#service" class="hover:text-red-600 hidden" data-lang="ru">Сервис</a>
+      <a href="about.html" class="hover:text-red-600" data-lang="en">About</a>
+      <a href="about.html" class="hover:text-red-600 hidden" data-lang="uz">Kompaniya</a>
+      <a href="about.html" class="hover:text-red-600 hidden" data-lang="ru">О компании</a>
+      <a href="#news" class="hover:text-red-600" data-lang="en">News</a>
+      <a href="#news" class="hover:text-red-600 hidden" data-lang="uz">Yangiliklar</a>
+      <a href="#news" class="hover:text-red-600 hidden" data-lang="ru">Новости</a>
+      <a href="#contacts" class="hover:text-red-600" data-lang="en">Contacts</a>
+      <a href="#contacts" class="hover:text-red-600 hidden" data-lang="uz">Kontaktlar</a>
+      <a href="#contacts" class="hover:text-red-600 hidden" data-lang="ru">Контакты</a>
+    </nav>
+    <div>© 2024 ООО «Prof Sale Auto Diesel». Barcha huquqlar himoyalangan.</div>
+  </footer>
+
+  <!-- Language Toggle & Tabs JS -->
+  <script>
+    function setLang(lang) {
+      document.querySelectorAll('[data-lang]').forEach(el => {
+        if (el.getAttribute('data-lang') === lang) {
+          el.classList.remove('hidden');
+        } else {
+          el.classList.add('hidden');
+        }
+      });
+    }
+    // Default to UZ
+    setLang('uz');
+  </script>
+</body>
+</html> 

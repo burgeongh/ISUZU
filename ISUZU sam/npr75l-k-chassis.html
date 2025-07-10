@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="uz">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Chassis ISUZU NPR75L-K (COMFORT) | ООО «Prof Sale Auto Diesel»</title>
+  <link rel="icon" href="/Media/favicon logo.png" type="image/png" />
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-50 text-gray-900 font-sans">
+  <div class="bg-red-900 text-gray-100 text-sm flex justify-end items-center px-4 py-2">
+    <div class="flex items-center space-x-2">
+      <button class="px-3 py-1 rounded bg-red-800 hover:bg-red-700 focus:outline-none focus:ring-2 focus:ring-red-400 font-semibold transition" onclick="setLang('uz')">UZ</button>
+      <button class="px-3 py-1 rounded bg-red-800 hover:bg-red-700 focus:outline-none focus:ring-2 focus:ring-red-400 font-semibold transition" onclick="setLang('en')">EN</button>
+      <button class="px-3 py-1 rounded bg-red-800 hover:bg-red-700 focus:outline-none focus:ring-2 focus:ring-red-400 font-semibold transition" onclick="setLang('ru')">RU</button>
+    </div>
+  </div>
+  <main class="max-w-6xl mx-auto py-12 px-4">
+    <div class="flex flex-col md:flex-row items-center md:items-start gap-8">
+      <div class="flex-1">
+        <h1 class="text-3xl font-extrabold mb-4 text-red-900" data-lang="en">Chassis ISUZU NPR75L-K (COMFORT)</h1>
+        <h1 class="text-3xl font-extrabold mb-4 text-red-900 hidden" data-lang="uz">ISUZU NPR75L-K (COMFORT) shassisi</h1>
+        <h1 class="text-3xl font-extrabold mb-4 text-red-900 hidden" data-lang="ru">Шасси ISUZU NPR75L-K (COMFORT)</h1>
+        <p class="mb-4 text-lg" data-lang="en">[Description in English goes here]</p>
+        <p class="mb-4 text-lg hidden" data-lang="uz">[O'zbekcha tavsif shu yerda]</p>
+        <p class="mb-4 text-lg hidden" data-lang="ru">[Описание на русском здесь]</p>
+        <button class="px-6 py-2 bg-red-700 text-white rounded font-semibold hover:bg-red-800 mb-8" data-lang="en">Compare Models</button>
+        <button class="px-6 py-2 bg-red-700 text-white rounded font-semibold hover:bg-red-800 mb-8 hidden" data-lang="uz">Modellarni solishtiring</button>
+        <button class="px-6 py-2 bg-red-700 text-white rounded font-semibold hover:bg-red-800 mb-8 hidden" data-lang="ru">Сравнить модели</button>
+      </div>
+      <div class="flex-1 flex justify-center">
+        <img src="/Media/Lorry/NPR 75L-K (COMFORT) (Шасси.jpg" alt="Chassis ISUZU NPR75L-K (COMFORT)" class="w-full max-w-md rounded-xl shadow" />
+      </div>
+    </div>
+    <div class="mt-12">
+      <h2 class="text-2xl font-bold mb-6" data-lang="en">Technical Specifications</h2>
+      <h2 class="text-2xl font-bold mb-6 hidden" data-lang="uz">Texnik tasnifi</h2>
+      <h2 class="text-2xl font-bold mb-6 hidden" data-lang="ru">Технические характеристики</h2>
+      <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6 text-center">
+        <div>
+          <div class="text-2xl font-bold">[Value]</div>
+          <div class="text-sm text-gray-600" data-lang="en">Parameter</div>
+          <div class="text-sm text-gray-600 hidden" data-lang="uz">Parametr</div>
+          <div class="text-sm text-gray-600 hidden" data-lang="ru">Параметр</div>
+        </div>
+        <!-- Add more spec blocks as needed -->
+      </div>
+    </div>
+  </main>
+  <script>
+    function setLang(lang) {
+      document.querySelectorAll('[data-lang]').forEach(el => {
+        if (el.getAttribute('data-lang') === lang) {
+          el.classList.remove('hidden');
+        } else {
+          el.classList.add('hidden');
+        }
+      });
+    }
+    setLang('en');
+  </script>
+</body>
+</html> 
